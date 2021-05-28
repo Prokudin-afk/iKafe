@@ -1,0 +1,26 @@
+﻿<Page x:Class="WpfApp6.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp6"
+      mc:Ignorable="d" 
+      d:DesignHeight="950" d:DesignWidth="1590"
+      Title="Page5">
+
+    <Grid>
+        <Border Background="white" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="950" VerticalAlignment="Top" Width="1590">
+            <TextBlock FontSize="60">Заказы 09:00-12:00</TextBlock>
+        </Border>
+        <DataGrid x:Name="Dg_otchet" Grid.Row="1" Margin="10,143,10,10" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id" Header="id" Binding="{Binding id}" Width="100"/>
+                <DataGridTextColumn x:Name="name" Header="name" Binding="{Binding name}" Width="150"/>
+                <DataGridTextColumn x:Name="surname" Header="surname" Binding="{Binding surname}"  Width="150"/>
+                <DataGridTextColumn x:Name="phone" Header="phone" Binding="{Binding phone}" Width="150"/>
+                <DataGridTextColumn x:Name="idMesta" Header="idMesta" Binding="{Binding idMesta}"  Width="150"/>
+                <DataGridTextColumn x:Name="datetimeofzakaz" Header="Date" Binding="{Binding datetimeofzakaz}"  Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

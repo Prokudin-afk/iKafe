@@ -1,0 +1,38 @@
+﻿<Page x:Class="WpfApp6.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp6"
+      mc:Ignorable="d" 
+      d:DesignHeight="950" d:DesignWidth="1590"
+      Title="Page1">
+
+    <Grid>
+        <Border Background="#e0e094" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="950" VerticalAlignment="Top" Width="1590">
+            <TextBlock FontSize="60" Margin="101,129,-101,-129">Общий зал     09:00-12:00</TextBlock>
+        </Border>
+
+        <StackPanel Margin="100,318,224,100" Grid.Column="0" Grid.Row="0">
+            <TextBlock Text="Имя" Margin="0 10 0 0" Height="50" FontSize="40"/>
+            <TextBox x:Name="tbx_name" Height="50" FontSize="40"/>
+
+            <TextBlock Text="Фамилия" Margin="0 10 0 0" Height="50" FontSize="40"/>
+            <TextBox x:Name="tbx_surname" Height="50" FontSize="40"/>
+
+            <TextBlock Text="Телефон" Margin="0 10 0 0" Height="50" FontSize="40"/>
+            <TextBox x:Name="tbx_phone" Height="50" FontSize="40"/>
+
+            <TextBlock Text="Место" Margin="0 10 0 0" Height="50" FontSize="40"/>
+            <ComboBox x:Name="cb_mesto" Height="50" FontSize="40">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+            </ComboBox>
+            <Button Padding="20 10" Width="800" Margin="10" Click="Button_Click_1" Content="Забронировать"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
